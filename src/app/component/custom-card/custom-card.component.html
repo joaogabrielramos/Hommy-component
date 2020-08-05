@@ -1,0 +1,24 @@
+<ion-card>
+  <ion-card-subtitle>{{republica.subtitle}}</ion-card-subtitle>
+  <ion-card-title>{{republica.title}}</ion-card-title>
+  <ion-card-content>
+    <ion-img [src]="republica.img"></ion-img>
+    {{republica.content}}. {{republica.address}}
+    <ion-chip color="primary" outline="true">
+      <ion-label style="font-size:15px;">{{republica.rate}} <ion-icon slot="start" name="star"></ion-icon></ion-label>
+    </ion-chip>
+    <ion-chip color="secondary" outline="true" *ngIf="republica.kitchenComplete">
+      <ion-label style="font-size:15px;">Cozinha completa<ion-icon slot="start" name="restaurant-outline" style="margin-left: 10px;"></ion-icon></ion-label>
+    </ion-chip>
+
+  <ion-chip color="success"  outline="true" *ngIf="republica.freeWifi">
+    <ion-label>Wifi liberado</ion-label>
+    <ion-icon name="wifi-outline"></ion-icon>
+  </ion-chip>
+    
+  </ion-card-content>
+  <!-- <ion-button (click)="handleButton(republica.title)" expand="block"> oi </ion-button> -->
+  
+ 
+   
+</ion-card>

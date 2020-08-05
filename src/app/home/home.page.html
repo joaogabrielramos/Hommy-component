@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      <img src="https://fontmeme.com/permalink/200728/4eb698a68a176b15dc02082ebc5c3314.png" >
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,8 +13,5 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <app-custom-card (click)="emitRepublica()" [republica]="republica"  *ngFor="let republica of republicas"></app-custom-card>
 </ion-content>
